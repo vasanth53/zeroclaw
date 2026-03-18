@@ -2209,6 +2209,7 @@ async fn process_channel_message(
                 },
                 ctx.tool_call_dedup_exempt.as_ref(),
                 ctx.activated_tools.as_ref(),
+                None,
             ),
         ) => LlmExecutionResult::Completed(result),
     };
